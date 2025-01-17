@@ -3,11 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="">
-    <title></title>
+    <meta name="description" content="TextTab é um editor de texto Rich-Text funcional para criação, exportação e organização de documentos com formatação, além de armazenar suas anotações de forma prática e acessível.">
+    <meta name="author" content="Nelson Martins">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> <!-- PT Sans e Roboto-->
+
+    <!-- FontAwesome Script -->
+    <script src="https://kit.fontawesome.com/6162894145.js" crossorigin="anonymous"></script>
+    
+    <title>TextTab</title>
 </head>
 <body>
-    
+    <!-- Cabeçalho -->
+    <header>
+        <h1>TextTab</h1>
+        <p class="subtitle">Edite e salves suas anotações!</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section class="editor-container">
+
+            <div class="editor-controls">
+
+                <!-- Botões de formatação -->
+                <div class="format-buttons">
+                    <button id="bold" aria-label="Negrito">
+                        <i class="fa-solid fa-bold" aria-hidden="true"></i>
+                    </button>
+                    <button id="italic" aria-label="Itálico">
+                        <i class="fa-solid fa-italic" aria-hidden="true"></i>
+                    </button>
+                    <button id="underline" aria-label="Sublinhado">
+                        <i class="fa-solid fa-underline" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <!-- Botões para listas -->
+                <div class="list-buttons">
+                    <button id="unordered-list" aria-label="Lista de Marcadores">
+                        <i class="fa-solid fa-list" aria-hidden="true"></i>
+                    </button>
+                    <button id="ordered-list" aria-label="Lista Numerada">
+                        <i class="fa-solid fa-list-ol" aria-hidden="true"></i>
+                    </button>
+                    <button id="checkbox-list" aria-label="Lista de Verificação">
+                        <i class="fa-regular fa-square-check" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <!-- Botão de salvar -->
+                <div class="save-button">
+                    <button id="save" aria-label="Salvar documento">
+                        <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Área de edição/digitação -->
+            <div class="editor" role="textbox" contenteditable="true" aria-label="Área de edição de texto">
+                <p>Comece a escrever ou cole seu texto aqui!</p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Mensagem para navegadores sem JavaScript -->
+    <noscript>
+        <p>Para utilizar este editor, é necessário ativar o JavaScript no seu navegador.</p>
+    </noscript>
+
+    <!-- scripts js -->
+    <script src="script.js"></script>
 </body>
 </html>
