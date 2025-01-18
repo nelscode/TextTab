@@ -24,52 +24,52 @@
     <!-- Cabeçalho -->
     <header>
         <h1>TextTab</h1>
-        <p class="subtitle">Edite e salves suas anotações!</p>
+        <p class="subtitle">Edite e salve suas anotações!</p>
     </header>
 
     <!-- Conteúdo principal -->
     <main>
         <section class="editor-container">
-
             <div class="editor-controls">
+                <div class="editor-button-group">
+                    <!-- Botões de formatação -->
+                    <div class="format-buttons">
+                        <button id="bold" aria-label="Negrito">
+                            <i class="fa-solid fa-bold" aria-hidden="true"></i>
+                        </button>
+                        <button id="italic" aria-label="Itálico">
+                            <i class="fa-solid fa-italic" aria-hidden="true"></i>
+                        </button>
+                        <button id="underline" aria-label="Sublinhado">
+                            <i class="fa-solid fa-underline" aria-hidden="true"></i>
+                        </button>
+                    </div>
 
-                <!-- Botões de formatação -->
-                <div class="format-buttons">
-                    <button id="bold" aria-label="Negrito">
-                        <i class="fa-solid fa-bold" aria-hidden="true"></i>
-                    </button>
-                    <button id="italic" aria-label="Itálico">
-                        <i class="fa-solid fa-italic" aria-hidden="true"></i>
-                    </button>
-                    <button id="underline" aria-label="Sublinhado">
-                        <i class="fa-solid fa-underline" aria-hidden="true"></i>
-                    </button>
+                    <!-- Botões para listas -->
+                    <div class="list-buttons">
+                        <button id="unordered-list" aria-label="Lista de Marcadores">
+                            <i class="fa-solid fa-list" aria-hidden="true"></i>
+                        </button>
+                        <button id="ordered-list" aria-label="Lista Numerada">
+                            <i class="fa-solid fa-list-ol" aria-hidden="true"></i>
+                        </button>
+                        <button id="checkbox-list" aria-label="Lista de Verificação">
+                            <i class="fa-regular fa-square-check" aria-hidden="true"></i>
+                        </button>
+
+                        <!-- Botão de salvar -->
+                        <div class="save-button">
+                            <button id="save" aria-label="Salvar documento">
+                                <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Botões para listas -->
-                <div class="list-buttons">
-                    <button id="unordered-list" aria-label="Lista de Marcadores">
-                        <i class="fa-solid fa-list" aria-hidden="true"></i>
-                    </button>
-                    <button id="ordered-list" aria-label="Lista Numerada">
-                        <i class="fa-solid fa-list-ol" aria-hidden="true"></i>
-                    </button>
-                    <button id="checkbox-list" aria-label="Lista de Verificação">
-                        <i class="fa-regular fa-square-check" aria-hidden="true"></i>
-                    </button>
+                 <!-- Área de edição/digitação -->
+                <div class="editor" role="textbox" contenteditable="true" aria-label="Área de edição de texto">
+                    <!-- texto aqui dentro -->
                 </div>
-
-                <!-- Botão de salvar -->
-                <div class="save-button">
-                    <button id="save" aria-label="Salvar documento">
-                        <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Área de edição/digitação -->
-            <div class="editor" role="textbox" contenteditable="true" aria-label="Área de edição de texto">
-                <p>Comece a escrever ou cole seu texto aqui!</p>
             </div>
 
         </section>
