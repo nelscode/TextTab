@@ -22,46 +22,79 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
-        <h1>TextTab</h1>
-        <p class="subtitle">Edite e salve suas anotações!</p>
-    </header>
+    <a href="index.html">
+        <header>
+            <h1>TextTab</h1>
+            <p class="subtitle">Edite e salve suas anotações!</p>
+        </header>
+    </a>
 
     <!-- Conteúdo principal -->
     <main>
         <section class="editor-container">
             <div class="editor-controls">
                 <div class="editor-button-group">
+
+                    <!-- Seletor de fonte -->
+                    <select name="font-selector" id="font-selector" aria-label="Seletor de Fonte">
+                        <option value="Arial">Arial</option>
+                        <option value="Verdana">Verdana</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                    </select>
+
+                    <!-- Seletor de tamanho de fonte -->
+                    <select name="font-size-selector" id="font-size-selector" aria-label="Seletor de Tamanho de Fonte">
+                        <option value="3">Pequeno</option>
+                        <option value="5">Normal</option>
+                        <option value="7">Grande</option>
+                        <option value="9">Muito Grande</option>
+                    </select>
+
                     <!-- Botões de formatação -->
                     <div class="format-buttons">
-                        <button id="bold" aria-label="Negrito">
-                            <i class="fa-solid fa-bold" aria-hidden="true"></i>
-                        </button>
-                        <button id="italic" aria-label="Itálico">
-                            <i class="fa-solid fa-italic" aria-hidden="true"></i>
-                        </button>
-                        <button id="underline" aria-label="Sublinhado">
-                            <i class="fa-solid fa-underline" aria-hidden="true"></i>
-                        </button>
+                        <abbr title="Negrito">
+                            <button id="bold" aria-label="Negrito">
+                                <i class="fa-solid fa-bold" aria-hidden="true"></i>
+                            </button>
+                        </abbr>
+                        <abbr title="Itálico">
+                            <button id="italic" aria-label="Itálico">
+                                <i class="fa-solid fa-italic" aria-hidden="true"></i>
+                            </button>
+                        </abbr>
+                        <abbr title="Sublinhado">
+                            <button id="underline" aria-label="Sublinhado">
+                                <i class="fa-solid fa-underline" aria-hidden="true"></i>
+                            </button>
+                        </abbr>
                     </div>
 
                     <!-- Botões para listas -->
                     <div class="list-buttons">
-                        <button id="unordered-list" aria-label="Lista de Marcadores">
-                            <i class="fa-solid fa-list" aria-hidden="true"></i>
-                        </button>
-                        <button id="ordered-list" aria-label="Lista Numerada">
-                            <i class="fa-solid fa-list-ol" aria-hidden="true"></i>
-                        </button>
-                        <button id="checkbox-list" aria-label="Lista de Verificação">
-                            <i class="fa-regular fa-square-check" aria-hidden="true"></i>
-                        </button>
+                        <abbr title="Criar lista de marcadores">
+                            <button id="unordered-list" aria-label="Lista de Marcadores">
+                                <i class="fa-solid fa-list" aria-hidden="true"></i>
+                            </button>
+                        </abbr>
+                        <abbr title="Criar lista numerada">
+                            <button id="ordered-list" aria-label="Lista Numerada">
+                                <i class="fa-solid fa-list-ol" aria-hidden="true"></i>
+                            </button>
+                        </abbr>
+                        <abbr title="Criar lista de verificação">
+                            <button id="checkbox-list" aria-label="Lista de Verificação">
+                                <i class="fa-regular fa-square-check" aria-hidden="true"></i>
+                            </button>
+                        </abbr>
 
                         <!-- Botão de salvar -->
                         <div class="save-button">
-                            <button id="save" aria-label="Salvar documento">
-                                <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
-                            </button>
+                            <abbr title="Salvar documento">
+                                <button id="save" aria-label="Salvar documento">
+                                    <i class="fa-solid fa-floppy-disk" aria-hidden="true"></i>
+                                </button>
+                            </abbr>
                         </div>
                     </div>
                 </div>
